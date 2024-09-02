@@ -1,0 +1,88 @@
+*{
+   margin: 0px;
+   padding: 0px;
+}
+body{ 
+background-image: linear-gradient(rgb(36, 36, 88),rgba(0, 0, 0));
+font-family:serif;
+color: white;
+}
+.container{
+    background-image:linear-gradient(rgba(36, 36, 88, 0.575),rgba(0, 0, 0, 0.527)),
+    url(download.webp);
+    height: 675px;
+    width: 90%;
+    margin: 30px auto;
+    background-position: center;
+}  
+.container:hover{
+    background-image:linear-gradient(rgba(36, 36, 88, 0.418),transparent),
+    url(download.webp);
+    }
+    /*Start Section Header*/
+header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width:80%;
+ margin: auto;
+ padding:20px 0;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+ul{
+display:flex;
+}
+ul li{
+    list-style: none;
+    margin: 0px 20px;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    transition:all 0.3s;
+}
+ul li a:hover{
+    border-bottom: 2px solid aqua;
+    font-size: 20px;
+}
+/*End Section Header*/
+.section2{
+    margin-left: 100px;
+    margin-top: 150px;
+}
+.para1{
+    font-size:  50px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.para2{
+    width:200px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.link1{
+    text-decoration: none;
+    color:black;
+    background-color:gray;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.link1:hover{
+    background-color:rgba(128, 128, 128, 0.5);
+}
+/*Small Screens*/
+@media screen and (max-width:720px){
+header{
+    flex-direction: column;
+}
+ul{
+    margin-top:20px;
+}
+}
