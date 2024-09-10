@@ -14,6 +14,7 @@ color: white;
     width: 90%;
     margin: 30px auto;
     background-position: center;
+    transition: all 0.5s;
 }  
 .container:hover{
     background-image:linear-gradient(rgba(36, 36, 88, 0.418),transparent),
@@ -35,10 +36,10 @@ header{
 }
 ul{
 display:flex;
+gap: 40px;
 }
 ul li{
     list-style: none;
-    margin: 0px 20px;
 }
 ul li a{
     text-decoration: none;
@@ -73,6 +74,7 @@ ul li a:hover{
     padding: 10px;
     border-radius: 20px;
     font-weight: bold;
+    transition: all 0.5s;
 }
 .link1:hover{
     background-color:rgba(128, 128, 128, 0.5);
@@ -84,5 +86,9 @@ header{
 }
 ul{
     margin-top:20px;
-}
+}}
+@media screen and (max-width:480px){
+  ul{
+    gap: 20px;
+  }
 }
